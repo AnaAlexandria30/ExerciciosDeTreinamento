@@ -19,7 +19,10 @@ public class ProgramaAgenda {
                     String logradouro = JOptionPane.showInputDialog("Qual o logradouro (Rua, Av...)?");
                     String numero = JOptionPane.showInputDialog("Qual o número?");
                     String bairro = JOptionPane.showInputDialog("Qual o bairro?");
-                    Endereco end = new Endereco(logradouro,numero,bairro,"João Pessoa","Paraíba");
+                    String cidade = JOptionPane.showInputDialog("Qual o cidade?");
+                    String estado = JOptionPane.showInputDialog("Qual o estado?");
+                    String complemento = JOptionPane.showInputDialog("Qual o complemento?");
+                    Endereco end = new Endereco(logradouro, numero, bairro, cidade, estado, complemento);
                     Contato c = new Contato(nome, end);
                     agenda.cadastraContato(c);
                     break;
